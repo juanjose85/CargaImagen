@@ -1,0 +1,10 @@
+.custom-card-box {
+    height: 35px;
+    background-color: #1976d2;
+    color:white;
+}
+
+.custom-card-box-title{
+    padding-top: 5px;
+    padding-left: 5px;
+}

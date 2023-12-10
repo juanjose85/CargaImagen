@@ -1,4 +1,17 @@
 
+html{
+  height: 100%;
+}
+
+body{
+  margin : 0;
+  padding: 0;
+  background-image: url('../public/background-red.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .App-area {
   margin-top: 100px;
 }
