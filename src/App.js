@@ -5,6 +5,7 @@ import InformacionPersonal from './components/informacionPersonal/InformacionPer
 import CargarImagen from './components/cargarImagen/CargarImagen';
 import Resumen from './components/resumen/Resumen';
 import { Button, Container, Card, Box, Grid } from '@mui/material';
+import CustomCard from './components/customCard/CustomCard';
 
 function App() {
 
@@ -46,7 +47,7 @@ function App() {
   return (
     <div className='App-area'>
       <Container maxWidth="md">
-        <Card>
+        <CustomCard title="Bienvenido">
           {/* Mostrar un botón para reiniciar el formulario si es necesario */}
           {step === 3 && (
             <Box className='info-persona-box'>
@@ -63,8 +64,7 @@ function App() {
           {step === 1 && <InformacionPersonal onSubmit={handlePersonalInfoSubmit} />}
           {step === 2 && <CargarImagen onSubmit={handleImageSubmit} />}
           {step === 3 && <Resumen personalInfo={personalInfo} image={image}/>}
-        </Card>
-
+        </CustomCard>
       </Container>
     </div>
   );
