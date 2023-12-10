@@ -10,7 +10,7 @@ import CustomCard from './components/customCard/CustomCard';
 function App() {
 
   // Almacenar y controlar los pasos.
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(2);
   // Estado para almacenar la información personal
   const [personalInfo, setPersonalInfo] = useState({
     name: '',
